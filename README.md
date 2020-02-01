@@ -17,7 +17,7 @@ Coming soon...
 Other devices
 -------------
 
-- You will have to compile the kernel yourself after appling the [patch](https://github.com/nift4/android-keyboard-gadget/tree/master/patch.md). Ask your ROM developer or XDA device community.
+- You will have to compile the kernel yourself after appling the [patch](https://github.com/nift4/android-keyboard-gadget/blob/master/patch.md). Ask your ROM developer or XDA device community.
 
 SELinux
 =======
