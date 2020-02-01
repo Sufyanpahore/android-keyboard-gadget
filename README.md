@@ -1,8 +1,8 @@
 Convert your Android device into USB keyboard/mouse, control your PC from your Android device remotely, including BIOS/bootloader.
 
 #### Apps & tools using android-keyboard-gadget:
-* [USB Keyboard](https://github.com/nift4/android-keyboard-gadget/tree/master/USB-Keyboard-App)
-* [hid-gadget-test](https://github.com/nift4/android-keyboard-gadget/tree/master/hid-gadget-test)
+* [USB Keyboard](https://github.com/nift4/android-keyboard-gadget/tree/app?files=1)
+* [hid-gadget-test](https://github.com/nift4/android-keyboard-gadget/tree/jni?files=1)
 * [Authorizer](https://github.com/tejado/Authorizer)
 * [KP2A USB Keyboard plugin](https://play.google.com/store/apps/details?id=th.in.whs.k2ausbkbd) [(F-Droid)](https://apt.izzysoft.de/fdroid/index/apk/th.in.whs.k2ausbkbd)
 
@@ -65,7 +65,7 @@ Consequently, the maximum amount of keys that may be pressed at the same time is
 Professional or 'gamer' USB keyboards report several keyboard HID descriptors, which creates several keyboard devices in host PC,
 to overcome that 7-key limit.
 
-The scancode table for each key is available [in hid-gadget-test utility](https://github.com/nift4/android-keyboard-gadget/tree/master/hid-gadget-test/jni/hid-gadget-test.c#L33).
+The scancode table for each key is available [in hid-gadget-test utility](https://github.com/nift4/android-keyboard-gadget/tree/jni/jni/hid-gadget-test.c#L33).
 Extended keys, such as Play/Pause, are not supported, because they require modifying USB descriptor in kernel patch.
 
 Mouse event is an array of 4 bytes, first byte is a bitmask of currently pressed mouse buttons:
@@ -79,5 +79,5 @@ Mouse event is an array of 4 bytes, first byte is a bitmask of currently pressed
 Remaining 3 bytes are X movement offset, Y movement offset, and mouse wheel offset, represented as signed integers.
 Horizontal wheel is not supported yet.
 
-See functions outputSendKeys() and outputSendMouse() inside file [input.cpp](https://github.com/nift4/android-keyboard-gadget/tree/master/USB-Keyboard-App/src/input.cpp)
+See functions outputSendKeys() and outputSendMouse() inside file [input.cpp](https://github.com/nift4/android-keyboard-gadget/tree/master/app/input.cpp)
 for reference implementation.
