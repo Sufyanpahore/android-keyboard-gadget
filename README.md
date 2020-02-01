@@ -1,8 +1,7 @@
 # USB Keyboard
 An graphical app to control PCs / other devices via Keyboard and Mouse emulation.
 
-Compiling USB Keyboard app
-==========================
+## Compiling USB Keyboard app
 
 To compile USB Keyboard app, install Android SDK and NDK from site http://developer.android.com/ , and launch commands
 
