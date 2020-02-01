@@ -7,6 +7,8 @@ Updated for Android kernel 3.18+
 
 Includes minor adjustments to usb function parser
 
+[modified by nift4 for modern android kernels]
+
 Source: https://github.com/pelya/android-keyboard-gadget
 ---
  drivers/usb/gadget/android.c                         |  78 +++++++++++++---
