@@ -1,7 +1,7 @@
 Convert your Android device into USB keyboard/mouse, control your PC from your Android device remotely, including BIOS/bootloader.
 
 #### Apps & tools using android-keyboard-gadget:
-* [USB Keyboard](https://github.com/nift4/android-keyboard-gadget/tree/app?files=1)
+* [USB Keyboard](https://github.com/nift4/android-keyboard-gadget/tree/app?files=1) [(F-Droid/Download)](https://apt.izzysoft.de/fdroid/index/apk/remote.hid.keyboard.client)
 * [hid-gadget-test](https://github.com/nift4/android-keyboard-gadget/tree/jni?files=1)
 * [Authorizer](https://github.com/tejado/Authorizer)
 * [KP2A USB Keyboard plugin](https://play.google.com/store/apps/details?id=th.in.whs.k2ausbkbd) [(F-Droid)](https://apt.izzysoft.de/fdroid/index/apk/th.in.whs.k2ausbkbd)
