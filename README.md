@@ -90,4 +90,4 @@ Here's a sample shell script that will send a predefined key sequence when USB c
 		echo "USB cable unplugged"
 	done
 
-Here is [the list of keys that hid-gadget-test utility supports](https://github.com/nift4/android-keyboard-gadget/tree/master/hid-gadget-test/jni/hid-gadget-test.c#L33)
+Here is [the list of keys that hid-gadget-test utility supports](https://github.com/nift4/android-keyboard-gadget/tree/jni/jni/hid-gadget-test.c#L33)
