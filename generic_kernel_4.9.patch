@@ -1,5 +1,5 @@
 From 4201852b3a2d914c8f8f3d039d5c36f6c978237a Mon Sep 17 00:00:00 2001
-From: "Laster K. (lazerl0rd)" <officiallazerl0rd@gmail.com>
+From: Diab Neiroukh <officiallazerl0rd@gmail.com>
 Date: Fri, 26 Jul 2019 16:34:24 +0200
 Subject: [PATCH] usb: gadget: add HID support for keyboard and mouse
 
@@ -7,7 +7,7 @@ Taken from the Android Gadget driver in older kernels, and adjusted to
 fit the current Linux HID driver.
 
 Suggested-by: simonpunk <simonpunk2016@gmail.com>
-Signed-off-by: Laster K. (lazerl0rd) <officiallazerl0rd@gmail.com>
+Signed-off-by: Diab Neiroukh <officiallazerl0rd@gmail.com>
 ---
  drivers/usb/gadget/function/f_hid.c           | 154 +++++++++++++++++-
  drivers/usb/gadget/function/f_hid.h           |  16 ++
@@ -180,12 +180,14 @@ index 8e83649f77ce1..393d36b6e265c 100644
 +			opts->report_length = ghid_device_android_keyboard.report_length;
 +			opts->report_desc_length = ghid_device_android_keyboard.report_desc_length;
 +			opts->report_desc = ghid_device_android_keyboard.report_desc;
++			break;
 +		case 1:
 +			opts->subclass = ghid_device_android_mouse.subclass;
 +			opts->protocol = ghid_device_android_mouse.protocol;
 +			opts->report_length = ghid_device_android_mouse.report_length;
 +			opts->report_desc_length = ghid_device_android_mouse.report_desc_length;
 +			opts->report_desc = ghid_device_android_mouse.report_desc;
++			break;
 +		}
  	}
  	config_group_init_type_name(&opts->func_inst.group, "", &hid_func_type);
@@ -382,4 +384,3 @@ index 0000000000000..877abb134a093
 +		0xc0		/*  END_COLLECTION				*/
 +	}
 +};
-
